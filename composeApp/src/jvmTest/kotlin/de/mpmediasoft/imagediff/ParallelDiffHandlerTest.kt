@@ -61,10 +61,10 @@ class ParallelDiffHandlerTest {
         }
     }
 
-//                           mac-mini X86                    mac-mini AARCH64
-// Single-threaded         : Diff computed in 36.511684ms    13.940397ms
-// Multi-threaded (simple) : Diff computed in 12.681792ms    5.277718ms
-// Multi-threaded (chunks) : Diff computed in 10.516840ms    3.349768ms
+//                           mac-mini X86                   mac-mini AARCH64 (M2)   macbook pro AARCH64 (M4)
+// Single-threaded         : Diff computed in 36.511684ms   13.940397ms             10.962306ms
+// Multi-threaded (simple) : Diff computed in 12.681792ms    5.277718ms              3.588887ms
+// Multi-threaded (chunks) : Diff computed in 10.516840ms    3.349768ms              2.173872ms
 
     private fun imageToArgbIntImage(imageFile: File): BufferedImage {
         val bufImg: BufferedImage = ImageIO.read(imageFile)
